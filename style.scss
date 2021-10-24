@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("images/cursor.png"), crosshair;
+}
+
+:root{
+  --main-color: #d3d3d3;
+  --second-color: #ececec;
+  --third-color: #;
+}
+
+
+.main_image{
+  width: 100%;
+}
+
+header>.main_image{
+  box-shadow: 0 0 15px #555;
+}
+
+header>p{
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow_down{
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.second_index{
+  margin-top: 20vh;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+
+.texte_presentation{
+  width: 20%;
+}
+
+.part_two{
+    height: 400px;
+    width: 400px;
+}
+
+.pp{
+  width: 100%;
+  box-shadow: 0px 0px 15px #555;
+}
+button{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+nav{
+  margin-left: 10%;
+  margin-right: 10%;
+  position: fixed;
+  top: 30px;
+  right: 0px;
+  background-color: var(--main-color);
+  z-index: 2;
+  text-decoration: none;
+  box-shadow: 0 0 15px #555;
+}
+
+nav>ul{
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 80px;
+  align-items: center;
+  li{
+    margin-left: 20px;
+    margin-right: 20px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+footer{
+  box-shadow: 0 0 15px #555;
+  background-color: var(--main-color);
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  h3{
+    margin-top: 80px;
+  }
+}
+
+
+.interet{
+  flex: 0 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #555;
+}
+.interet img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+
+
+
+.grille {
+  max-width: 1200px;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-rows: 300px 3fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
+}
+
+.item {
+  height: 300px;
+  width: 350px;
+}
+
+.picture_portfolio{
+  height: 100%;
+  width: 100%;
+}
+
+.grille_about{
+  box-shadow: 0px 0px 15px #555;
+  background-color: var(--second-color);
+  max-width: 90%;
+  min-height: 450px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-rows: 300px 3fr;
+  grid-template-columns: repeat(auto-fill, minmax(395px, 3fr));
+}
+.about-categorie{
+  margin: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.date{
+  color: grey;
+}
+
+
+ul{
+  list-style: none;
+  ul>li{
+    text-decoration: none;
+  }
+}
+
+.main_image_second{
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+
+h3{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.show{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  display: block;
+}
+
+
+.no_see{
+  display: none;
+}
+
+.mystyle {
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+.mini_menu{
+  height: 150px;
+  width: 150px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+
+  .arrow_down{
+    display: none;
+  }
+
+  header{
+    height: 460px;
+    position: sticky;
+    top: -130px;
+  }
+
+  header>p{
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px){
+  .about-categorie{
+    max-width: 310px;
+    width: auto;
+  }
+
+
+  .categorie2{
+    margin-top: 230px;
+    margin-bottom: 100px;
+  }
+
+  nav>ul{
+    width: 330px;
+  }
+
+  header>img{
+    height: 350px;
+  }
+
+
+
+  header>p{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .arrow_down {
+    display: none;
+  }
+
+  .second_index{
+    display: block;
+  }
+  .texte_presentation{
+    width: 95%;
+  }
+
+  .pp{
+    width: 78%;
+    height: auto;
+  }
+
+  .icones{
+    display: flex;
+  }
+
+}
+
+
