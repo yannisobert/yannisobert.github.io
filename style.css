@@ -11,57 +11,11 @@
   --third-color: #;
 }
 
-.main_image {
-  width: 100%;
+ul {
+  list-style: none;
 }
-
-header > .main_image {
-  box-shadow: 0 0 15px #555;
-}
-
-header > p {
-  font-size: 100px;
-  color: white;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-}
-
-.arrow_down {
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%);
-}
-
-.second_index {
-  margin-top: 20vh;
-  display: flex;
-  width: 80%;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 50px;
-}
-
-.texte_presentation {
-  width: 20%;
-}
-
-.part_two {
-  height: 400px;
-  width: 400px;
-}
-
-.pp {
-  width: 100%;
-  box-shadow: 0px 0px 15px #555;
-}
-
-button {
-  height: 100%;
-  width: 100%;
+ul ul > li {
+  text-decoration: none;
 }
 
 nav {
@@ -93,6 +47,27 @@ nav > ul li a {
   color: black;
 }
 
+.main_image {
+  width: 100%;
+  box-shadow: 0 0 15px #555;
+}
+
+.arrow_down {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+header > p {
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
 footer {
   box-shadow: 0 0 15px #555;
   background-color: var(--main-color);
@@ -105,7 +80,30 @@ footer h3 {
   margin-top: 80px;
 }
 
+.second_index {
+  margin-top: 20vh;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+.second_index .texte_presentation {
+  width: 20%;
+}
+.second_index .part_pp {
+  height: 400px;
+  width: 400px;
+}
+.second_index .part_pp .pp {
+  width: 100%;
+  box-shadow: 0px 0px 15px #555;
+}
+
 .interet {
+  width: 80px;
+  height: 80px;
   flex: 0 1 50%;
   display: flex;
   flex-flow: column wrap;
@@ -114,12 +112,6 @@ footer h3 {
   border: 3px solid black;
   border-radius: 50%;
   box-shadow: 0px 0px 15px #555;
-}
-
-.interet img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
 }
 
 .grille {
@@ -134,14 +126,58 @@ footer h3 {
   grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
 }
 
-.item {
+.main_image_second {
+  object-fit: cover;
+  width: 100%;
   height: 300px;
-  width: 350px;
 }
 
-.picture_portfolio {
-  height: 100%;
+.item {
+  height: 380px;
+  width: 380px;
+}
+
+.item1 {
+  height: auto;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets_bannieres/baniere_solary.png");
+}
+.item1:hover {
+  background-image: url("images/old_machine.jpeg");
+}
+
+.item2 {
+  height: auto;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets_bannieres/baniere_solary.png");
+}
+.item2:hover {
+  background-image: url("images/old_machine.jpeg");
+}
+
+.item3 {
+  height: auto;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets_bannieres/baniere_solary.png");
+}
+.item3:hover {
+  background-image: url("images/old_machine.jpeg");
+}
+
+.no_see {
+  display: none;
+}
+
+.mystyle {
+  display: flex;
   width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
 }
 
 .grille_about {
@@ -170,47 +206,8 @@ footer h3 {
   color: grey;
 }
 
-ul {
-  list-style: none;
-}
-ul ul > li {
-  text-decoration: none;
-}
-
-.main_image_second {
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-}
-
 h3 {
   margin-top: 20px;
-}
-
-.show {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  background-color: red;
-  display: block;
-}
-
-.no_see {
-  display: none;
-}
-
-.mystyle {
-  display: flex;
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px;
-}
-
-.mini_menu {
-  height: 150px;
-  width: 150px;
 }
 
 @media screen and (max-width: 1024px) {
