@@ -8,7 +8,7 @@
 :root {
   --main-color: #d3d3d3;
   --second-color: #ececec;
-  --third-color: #;
+  --third-color: #e7e7e7;
 }
 
 ul {
@@ -92,16 +92,13 @@ footer h3 {
 .second_index .texte_presentation {
   width: 20%;
 }
-.second_index .part_pp {
-  height: 400px;
-  width: 400px;
-}
-.second_index .part_pp .pp {
-  width: 100%;
+.second_index .pp {
+  height: 350px;
+  width: 350px;
   box-shadow: 0px 0px 15px #555;
 }
 
-.interet {
+.rs {
   width: 80px;
   height: 80px;
   flex: 0 1 50%;
@@ -114,57 +111,57 @@ footer h3 {
   box-shadow: 0px 0px 15px #555;
 }
 
-.grille {
-  max-width: 1200px;
-  height: 100%;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-row-gap: 20px;
-  grid-template-rows: 300px 3fr;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
-}
-
 .main_image_second {
   object-fit: cover;
   width: 100%;
   height: 300px;
 }
 
+.grille {
+  max-width: 1300px;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(250px, 3fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
+}
+
 .item {
-  height: 380px;
-  width: 380px;
+  height: 250px;
+  width: 350px;
 }
 
 .item1 {
-  height: auto;
+  height: 250px;
   width: auto;
   background-size: cover;
-  background-image: url("images/projets_bannieres/baniere_solary.png");
+  background-image: url("images/projets/baniere_tailwindxjavascript.png");
 }
 .item1:hover {
-  background-image: url("images/old_machine.jpeg");
+  background-image: url("images/projets/tailwindxjavascript_hover.png");
 }
 
 .item2 {
-  height: auto;
+  height: 250px;
   width: auto;
   background-size: cover;
-  background-image: url("images/projets_bannieres/baniere_solary.png");
+  background-image: url("images/projets/baniere_solary.png");
 }
 .item2:hover {
-  background-image: url("images/old_machine.jpeg");
+  background-image: url("images/projets/solary_hover.png");
 }
 
 .item3 {
-  height: auto;
+  height: 250px;
   width: auto;
   background-size: cover;
-  background-image: url("images/projets_bannieres/baniere_solary.png");
+  background-image: url("images/projets/baniere_solary.png");
 }
 .item3:hover {
-  background-image: url("images/old_machine.jpeg");
+  background-image: url("images/projets/solary_hover.png");
 }
 
 .no_see {
@@ -175,9 +172,14 @@ footer h3 {
   display: flex;
   width: 100%;
   padding: 25px;
-  background-color: coral;
+  background: var(--third-color);
   color: white;
   font-size: 25px;
+}
+
+.portfolio_item_picture {
+  max-width: 800px;
+  min-width: 350px;
 }
 
 .grille_about {
@@ -192,8 +194,8 @@ footer h3 {
   margin-bottom: 40px;
   column-gap: 50px;
   display: grid;
-  grid-template-rows: 300px 3fr;
-  grid-template-columns: repeat(auto-fill, minmax(395px, 3fr));
+  grid-template-rows: auto 3fr;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 3fr));
 }
 
 .about-categorie {
@@ -216,7 +218,7 @@ h3 {
   }
 
   header {
-    height: 460px;
+    height: auto;
     position: sticky;
     top: -130px;
   }
@@ -230,14 +232,14 @@ h3 {
   }
 }
 @media screen and (max-width: 600px) {
+  .item {
+    margin: 10px;
+  }
+
   .about-categorie {
     max-width: 310px;
     width: auto;
-  }
-
-  .categorie2 {
-    margin-top: 230px;
-    margin-bottom: 100px;
+    height: auto;
   }
 
   nav > ul {
@@ -260,15 +262,17 @@ h3 {
 
   .second_index {
     display: block;
+    width: 320px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .texte_presentation {
-    width: 95%;
+    width: 320px;
   }
 
-  .pp {
-    width: 78%;
-    height: auto;
+  .texte_presentation > p {
+    width: 320px;
   }
 
   .icones {
