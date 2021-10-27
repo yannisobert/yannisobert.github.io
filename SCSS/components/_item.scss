@@ -1,0 +1,32 @@
+// Images for the differents projects (+ hover)
+.item {
+  height: 250px;
+  width: 350px;
+}
+.item1{
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_tailwindxjavascript.png");
+  &:hover{
+    background-image: url("images/projets/tailwindxjavascript_hover.png");
+  }
+}
+.item2{
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_solary.png");
+  &:hover{
+    background-image: url("images/projets/solary_hover.png");
+  }
+}
+.item3{
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_solary.png");
+  &:hover{
+    background-image: url("images/projets/solary_hover.png");
+  }
+}
