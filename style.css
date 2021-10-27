@@ -1,21 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  cursor: url("images/cursor.png"), crosshair;
+.item {
+  height: 250px;
+  width: 350px;
 }
 
-:root {
-  --main-color: #d3d3d3;
-  --second-color: #ececec;
-  --third-color: #e7e7e7;
+.item1 {
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_tailwindxjavascript.png");
+}
+.item1:hover {
+  background-image: url("images/projets/tailwindxjavascript_hover.png");
 }
 
-ul {
-  list-style: none;
+.item2 {
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_solary.png");
 }
-ul ul > li {
-  text-decoration: none;
+.item2:hover {
+  background-image: url("images/projets/solary_hover.png");
+}
+
+.item3 {
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_solary.png");
+}
+.item3:hover {
+  background-image: url("images/projets/solary_hover.png");
 }
 
 nav {
@@ -24,7 +39,7 @@ nav {
   position: fixed;
   top: 30px;
   right: 0px;
-  background-color: var(--main-color);
+  background-color: #d3d3d3;
   z-index: 2;
   text-decoration: none;
   box-shadow: 0 0 15px #555;
@@ -45,6 +60,26 @@ nav > ul li {
 nav > ul li a {
   text-decoration: none;
   color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("images/cursor.png"), crosshair;
+}
+
+:root {
+  --main-color: #d3d3d3;
+  --second-color: #ececec;
+  --third-color: #e7e7e7;
+}
+
+ul {
+  list-style: none;
+}
+ul ul > li {
+  text-decoration: none;
 }
 
 .main_image {
@@ -70,7 +105,7 @@ header > p {
 
 footer {
   box-shadow: 0 0 15px #555;
-  background-color: var(--main-color);
+  background-color: #d3d3d3;
   height: 180px;
   display: flex;
   justify-content: center;
@@ -129,41 +164,6 @@ footer h3 {
   grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
 }
 
-.item {
-  height: 250px;
-  width: 350px;
-}
-
-.item1 {
-  height: 250px;
-  width: auto;
-  background-size: cover;
-  background-image: url("images/projets/baniere_tailwindxjavascript.png");
-}
-.item1:hover {
-  background-image: url("images/projets/tailwindxjavascript_hover.png");
-}
-
-.item2 {
-  height: 250px;
-  width: auto;
-  background-size: cover;
-  background-image: url("images/projets/baniere_solary.png");
-}
-.item2:hover {
-  background-image: url("images/projets/solary_hover.png");
-}
-
-.item3 {
-  height: 250px;
-  width: auto;
-  background-size: cover;
-  background-image: url("images/projets/baniere_solary.png");
-}
-.item3:hover {
-  background-image: url("images/projets/solary_hover.png");
-}
-
 .no_see {
   display: none;
 }
@@ -172,7 +172,7 @@ footer h3 {
   display: flex;
   width: 100%;
   padding: 25px;
-  background: var(--third-color);
+  background: #e7e7e7;
   color: white;
   font-size: 25px;
 }
@@ -184,7 +184,7 @@ footer h3 {
 
 .grille_about {
   box-shadow: 0px 0px 15px #555;
-  background-color: var(--second-color);
+  background-color: #ececec;
   max-width: 90%;
   min-height: 450px;
   height: auto;
@@ -208,11 +208,15 @@ footer h3 {
   color: grey;
 }
 
-h3 {
+.about-categorie > h2 {
   margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
+  .mystyle {
+    display: block;
+  }
+
   .arrow_down {
     display: none;
   }
@@ -232,6 +236,14 @@ h3 {
   }
 }
 @media screen and (max-width: 600px) {
+  .mystyle {
+    display: block;
+  }
+
+  .portfolio_item_picture {
+    width: 350px;
+  }
+
   .item {
     margin: 10px;
   }
