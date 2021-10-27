@@ -17,10 +17,10 @@
   height: 250px;
   width: auto;
   background-size: cover;
-  background-image: url("images/projets/baniere_solary.png");
+  background-image: url("images/projets/baniere_tailwindxjavascript.png");
 }
 .item2:hover {
-  background-image: url("images/projets/solary_hover.png");
+  background-image: url("images/projets/tailwindxjavascript_hover.png");
 }
 
 .item3 {
@@ -67,12 +67,7 @@ nav > ul li a {
   padding: 0;
   box-sizing: border-box;
   cursor: url("images/cursor.png"), crosshair;
-}
-
-:root {
-  --main-color: #d3d3d3;
-  --second-color: #ececec;
-  --third-color: #e7e7e7;
+  font-family: "Roboto";
 }
 
 ul {
@@ -95,6 +90,8 @@ ul ul > li {
 }
 
 header > p {
+  font-family: Serif;
+  text-shadow: #000000 3px 3px, #000000 -3px 3px, #000000 -3px -3px, #000000 3px -3px;
   font-size: 100px;
   color: white;
   position: absolute;
@@ -173,8 +170,8 @@ footer h3 {
   width: 100%;
   padding: 25px;
   background: #e7e7e7;
-  color: white;
   font-size: 25px;
+  color: black;
 }
 
 .portfolio_item_picture {
