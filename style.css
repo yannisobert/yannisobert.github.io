@@ -233,6 +233,16 @@ footer h3 {
   justify-content: center;
 }
 
+.p1 {
+  display: flex;
+  justify-content: center;
+}
+
+.p2 {
+  display: flex;
+  justify-content: center;
+}
+
 .personnality_part {
   margin-top: 60px;
   margin-left: 40px;
@@ -356,6 +366,14 @@ footer h3 {
 
   .texte_presentation > p {
     width: 320px;
+  }
+
+  .p1 {
+    display: block;
+  }
+
+  .p2 {
+    display: block;
   }
 
   .icones {
