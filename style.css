@@ -98,6 +98,11 @@ ul ul > li {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: grey;
+}
+
 .main_image {
   width: 100%;
   box-shadow: 0 0 15px #555;
@@ -276,6 +281,10 @@ footer h3 {
 
 @media screen and (max-width: 1024px) {
   .mystyle {
+    display: block;
+  }
+
+  .item_part_1_2 {
     display: block;
   }
 
