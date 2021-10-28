@@ -7,10 +7,10 @@
   height: 250px;
   width: auto;
   background-size: cover;
-  background-image: url("images/projets/baniere_tailwindxjavascript.png");
+  background-image: url("images/projets/baniere_stopsmoking.png");
 }
 .item1:hover {
-  background-image: url("images/projets/tailwindxjavascript_hover.png");
+  background-image: url("images/projets/stopsmoking_hover.png");
 }
 
 .item2 {
@@ -31,6 +31,27 @@
 }
 .item3:hover {
   background-image: url("images/projets/solary_hover.png");
+}
+
+.item_part_1_2 {
+  display: flex;
+}
+
+.item_part_2 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.item_part_2 > h3 {
+  margin-top: 30px;
+}
+
+.techno_ul_li {
+  font-size: 20px;
+}
+
+.item_text_part {
+  font-size: 20px;
 }
 
 nav {
@@ -67,7 +88,7 @@ nav > ul li a {
   padding: 0;
   box-sizing: border-box;
   cursor: url("images/cursor.png"), crosshair;
-  font-family: "Roboto";
+  font-family: "Playfair Display", sans-serif;
 }
 
 ul {
@@ -90,7 +111,6 @@ ul ul > li {
 }
 
 header > p {
-  font-family: Serif;
   text-shadow: #000000 3px 3px, #000000 -3px 3px, #000000 -3px -3px, #000000 3px -3px;
   font-size: 100px;
   color: white;
@@ -123,6 +143,7 @@ footer h3 {
 }
 .second_index .texte_presentation {
   width: 20%;
+  text-align: center;
 }
 .second_index .pp {
   height: 350px;
@@ -147,6 +168,7 @@ footer h3 {
   object-fit: cover;
   width: 100%;
   height: 300px;
+  box-shadow: 0 0 15px #555;
 }
 
 .grille {
@@ -166,7 +188,7 @@ footer h3 {
 }
 
 .mystyle {
-  display: flex;
+  display: block;
   width: 100%;
   padding: 25px;
   background: #e7e7e7;
@@ -179,8 +201,51 @@ footer h3 {
   min-width: 350px;
 }
 
+.start_about {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.start_about_title {
+  width: 30%;
+  text-align: right;
+  margin-right: 3%;
+}
+
+.start_about_p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  text-align: left;
+  margin-left: 3%;
+  color: grey;
+}
+
+.personnality {
+  display: flex;
+  justify-content: center;
+}
+
+.personnality_part {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personnality_logos {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #555;
+}
+
 .grille_about {
-  box-shadow: 0px 0px 15px #555;
+  box-shadow: 0 0 15px #555;
   background-color: #ececec;
   max-width: 90%;
   min-height: 450px;
