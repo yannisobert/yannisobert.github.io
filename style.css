@@ -91,6 +91,10 @@ nav > ul li a {
   font-family: "Playfair Display", sans-serif;
 }
 
+body {
+  background: #e7e7e7;
+}
+
 ul {
   list-style: none;
 }
@@ -190,15 +194,12 @@ footer h3 {
   grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
 }
 
-.no_see {
-  display: none;
-}
-
-.mystyle {
+.portfolio_projets {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
   padding: 25px;
-  background: #e7e7e7;
   font-size: 25px;
   color: black;
 }
