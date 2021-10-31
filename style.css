@@ -107,9 +107,14 @@ a {
   color: grey;
 }
 
+header {
+  height: 100vh;
+  width: auto;
+}
+
 .main_image {
   object-fit: cover;
-  height: 850px;
+  height: 100vh;
   width: 100%;
   box-shadow: 0 0 15px #555;
 }
@@ -393,10 +398,6 @@ button:hover {
 
   nav > ul {
     width: 330px;
-  }
-
-  header > img {
-    height: 350px;
   }
 
   header > p {
