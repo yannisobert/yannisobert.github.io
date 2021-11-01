@@ -107,11 +107,6 @@ a {
   color: grey;
 }
 
-header {
-  height: 100vh;
-  width: auto;
-}
-
 .main_image {
   object-fit: cover;
   height: 100vh;
@@ -300,8 +295,6 @@ footer h3 {
 .contact_main {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
 }
 
 .logo_mail_contact_page {
