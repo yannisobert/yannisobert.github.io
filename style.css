@@ -316,11 +316,9 @@ footer h3 {
   display: none;
 }
 
-
 .learn_more_part_lists {
-  text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 50px;
 }
@@ -434,13 +432,17 @@ button:hover {
     display: flex;
   }
 
-  .learn_more_part_lists {
-    transform: translate(-50%, 0%);
-    margin-left: 50%;
-    flex-direction: column;
+  .learn_more_part_title {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .learn_more_part_title{
+  .learn_more_part_lists {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
   }
