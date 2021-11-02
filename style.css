@@ -1,4 +1,4 @@
-.item {
+.portfolio_projets .item {
   height: 250px;
   width: 350px;
 }
@@ -35,11 +35,6 @@
 
 .item_part_1_2 {
   display: flex;
-}
-
-.item_part_2 {
-  margin-top: 40px;
-  margin-left: 20px;
 }
 
 .item_part_2 > h3 {
