@@ -1,4 +1,5 @@
 // Images for the differents projects (+ hover)
+.portfolio_projets
 .item {
   height: 250px;
   width: 350px;
@@ -30,13 +31,20 @@
     background-image: url("images/projets/solary_hover.png");
   }
 }
+.item4{
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_studioedoras.png");
+  &:hover{
+    background-image: url("images/projets/hover_studioedoras.png");
+  }
+}
+
 .item_part_1_2{
   display: flex;
 }
-.item_part_2{
-  margin-top: 40px;
-  margin-left: 20px;
-}
+
 .item_part_2>h3{
   margin-top: 30px;
 }

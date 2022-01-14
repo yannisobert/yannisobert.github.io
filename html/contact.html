@@ -11,36 +11,38 @@
 </head>
 <body>
 
-<header>
-  <img class="main_image_second" src="../images/old_machine.jpeg" alt="old_machine">
-</header>
+  <header>
+    <img class="main_image_second" src="../images/old_machine.jpeg" alt="old_machine">
+  </header>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="projets.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</section>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projets.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
 
-<main class="contact_main">
-  <a href="mailto:obertyannis@gmail.com"><img class="rs" src="../logos/mail.svg" alt="mail"></a>
-  <p>You want create project with me? Be the digital revolution?<br>So, contact me!</p>
-</main>
+  <main class="contact_main">
+    <form action="../mail.php" method="POST">
+      <p>Nom</p>
+      <input type="text" name="name" type="text" placeholder="Saisir un nom">
+      <p>Prénom</p>
+      <input type="text" name="surname" type="text" placeholder="Saisir un prénom">
+      <p>Email</p>
+      <input type="text" name="email" placeholder="Saisir email">
+      <p>Message</p>
+      <textarea type="text" name="message" placeholder="Saisir votre message"></textarea>
+      <button type="submit"><p>Echangeons</p></button>
+    </form>
+  </main>
 
-<section class="contact_mail">
-  <h1>obertyannis@gmail.com</h1>
-</section>
-
-
-
-
-<footer>
-  <h3>Copyright © 2021 - Yannis OBERT</h3>
-</footer>
+  <footer>
+    <h3>Copyright © 2021 - Yannis OBERT</h3>
+  </footer>
 
 </body>
 </html>

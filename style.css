@@ -9,6 +9,7 @@
   background-size: cover;
   background-image: url("images/projets/baniere_stopsmoking.png");
 }
+
 .item1:hover {
   background-image: url("images/projets/stopsmoking_hover.png");
 }
@@ -19,6 +20,7 @@
   background-size: cover;
   background-image: url("images/projets/baniere_tailwindxjavascript.png");
 }
+
 .item2:hover {
   background-image: url("images/projets/tailwindxjavascript_hover.png");
 }
@@ -29,7 +31,19 @@
   background-size: cover;
   background-image: url("images/projets/baniere_solary.png");
 }
+
 .item3:hover {
+  background-image: url("images/projets/solary_hover.png");
+}
+
+.item4 {
+  height: 250px;
+  width: auto;
+  background-size: cover;
+  background-image: url("images/projets/baniere_studioedoras.png");
+}
+
+.item4:hover {
   background-image: url("images/projets/solary_hover.png");
 }
 
@@ -69,10 +83,12 @@ nav > ul {
   height: 80px;
   align-items: center;
 }
+
 nav > ul li {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 nav > ul li a {
   text-decoration: none;
   color: black;
@@ -93,6 +109,7 @@ body {
 ul {
   list-style: none;
 }
+
 ul ul > li {
   text-decoration: none;
 }
@@ -134,6 +151,7 @@ footer {
   justify-content: center;
   margin-bottom: 0;
 }
+
 footer h3 {
   margin-top: 80px;
 }
@@ -147,10 +165,12 @@ footer h3 {
   margin-right: 10%;
   margin-bottom: 50px;
 }
+
 .second_index .texte_presentation {
   width: 20%;
   text-align: center;
 }
+
 .second_index .pp {
   height: 350px;
   width: 350px;
@@ -339,6 +359,7 @@ button {
   border: 0;
   margin-bottom: 50px;
 }
+
 button:hover {
   background: #d3d3d3;
 }
@@ -468,5 +489,7 @@ button:hover {
     width: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
